@@ -1,0 +1,1382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --accent-color: #ff5733; /* Define your accent color here */
+}
+
+
+/*----start of navbar */
+
+.container .image img{
+    margin-right: 4px;
+    width: 60%;
+
+}
+.firstSection .navbar-expand-lg{
+position: fixed;
+
+top: 0px;
+margin-bottom: 100px;
+z-index: 1100;
+
+width: 100%;
+
+}
+.navbar {
+    background-color: transparent; /* Default background color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar.scrolled {
+    background-color: white; /* Background color when scrolled */
+}
+.container .navbar-brand {
+    font-size: 30px;
+    color: #012970;
+}
+.container .navbar-nav a {
+    color: #012970;
+    margin-right: 6px;
+    font-weight: bold;
+
+
+}
+.container .navbar-nav  .active{
+    color: #4154f1;
+    font-weight: bold;
+
+
+}
+.container .dropdown button{
+    color: #012970;
+    font-weight: bold;
+
+}
+/*----end of navbar */
+
+
+/* start of section 1 */
+.firstSection{
+    background-image: url("images/hero-bg.png");
+    background-size: 100% 100%;
+    height: 100vh;
+
+}
+.firstSection .section1{
+    position: relative;
+    top: 90px;
+}
+.section1 .sec1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+
+
+
+    
+    
+}
+.section1 .sec1 .leftSide{
+    position: relative;
+    top: 25px;
+}
+.section1 .sec1 .right{
+    position: relative;
+    top: 30px;
+}
+.section1 .sec1 .leftSide h1{
+    color: #012970;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.section1 .sec1 .leftSide p{
+    color: #adb5bd;
+    font-size: 20px;
+}
+
+.section1 .sec1 .leftSide  .one{
+    position: relative;
+    right: 10px;
+    z-index: 999;
+    left: 140px;
+    color: white;
+}
+.section1 .sec1 .leftSide button{
+    padding: 10px 40px;
+    position: relative;
+    right: 20px;
+}
+.section1 .sec1 .leftSide .spanAndIcon{
+    position: relative;
+    bottom: 50px;
+    left: 200px;
+}
+.section1 .sec1 .leftSide .spanAndIcon i{
+    font-size: 40px;
+    color: #4154f1;
+
+}
+.section1 .sec1 .leftSide .spanAndIcon span{
+    font-weight: bold;
+    position: absolute;
+    top: 17px;
+    left: 60px;
+
+}
+
+
+/* Animation keyframes for moving up and down */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Start at original position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up by 20px */
+    }
+    100% {
+        transform: translateY(0); /* Move back to original position */
+    }
+}
+
+/* Apply animation to the image */
+.animate-up-down {
+    animation: moveUpDown 2s ease-in-out infinite; /* 2 seconds duration, smooth transition, infinite loop */
+}
+
+
+
+
+/* end of section 1 */
+
+
+/* start of section 2 */
+.sec2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    
+}
+.sec2 .leftsection{
+  width: 700px;
+  height: 350px;
+    padding-left: 20px;
+   background-color: #f8f8fa
+};
+    
+    .sec2 .leftsection h5 {
+        color: #4154f1;
+    }
+.sec2 .leftsection .p1{
+    color: #012970;
+    font-size: 20px;
+    font-weight: bold;
+ 
+}
+.sec2 .leftsection .p2{
+ 
+}
+.sec2 .leftsection i{
+ 
+    position: relative;
+    left: 160px;
+    color: white;
+    z-index: 999;
+}
+.sec2 .leftsection button{
+    padding: 10px 60px;
+    position: relative;
+    right: 20px;
+ 
+}
+.sec2 .rightsection {
+    position: relative;
+    bottom: 20px;
+}
+.sec2 .rightsection img{
+    width: 88%;
+
+}
+
+
+
+
+/* end of section 2 */
+
+
+/* start of section 3 */
+
+
+.section3{
+
+    margin-top: 90px;
+}
+.section3 .heading span{
+    background-color: #bec1da;
+    border: 1px solid #bec1da;
+    border-radius: 13px;
+    color: #4154f1;
+    padding: 2px 13px;
+
+
+}
+.section3 .heading h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #012970;
+
+
+}
+.section3 .secendPart .row .col-4{
+    position: relative;
+    border: 1px solid beige;
+    border-radius: 2px;
+    margin-left: 20px;
+    width: 30%;
+    box-shadow: offset-x offset-y blur-radius spread-radius color;
+    height: 450px;
+    background-color: #fff; /* Optional: Ensure background color to make shadow visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; Optional: Smooth transition for shadow on hover
+    
+   
+}
+.col-4:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; /* Optional: Smooth transition for shadow on hover */
+}
+
+.col-4 img {
+   
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.col-4:hover img {
+    transform: scale(0.9); /* Scale the image to 40% of its original size */
+}
+.section3 .secendPart .row .col-4 .content{
+    position: absolute;
+    top: 60px;
+
+}
+
+.section3 .secendPart .row img{
+    width: 60%;
+
+}
+.section3 .secendPart .row h3{
+    margin-top: 8px;
+    color: #012970;
+
+
+}
+.section3 .secendPart .row p{
+
+}
+
+.section3 .col-3{
+
+    margin-top: 100px;
+    border: 2px solid beige;
+    border-radius: 3px;
+   
+    justify-content: s;
+    width: 22%;
+    margin-left: 20px;
+    height: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; /* Optional: Smooth transition for shadow on hover */
+
+    
+
+}
+.section3 .col-3 i{
+    color: #4154f1;
+    font-size: 35px;
+    position: relative;
+    top: 30px;
+    right: 60px;
+
+}
+.section3 .col-3 span{
+    position: relative;
+    top: 20px;
+    right: 50px;
+    font-size: 35px;
+    color: #012970;
+    
+}
+.section3 .col-3 p{
+    position: relative;
+    top: 20px;
+    right: 15px;
+
+
+    
+}
+
+
+/* end of section 3 */
+
+
+
+
+/* start of secton four */
+.fourthsection {
+    margin-top: 70px;
+}
+.fourthsection .heading{
+    margin-bottom: 20px;
+
+}
+ .heading span{
+    background-color: #bec1da;
+    border: 1px solid #bec1da;
+    border-radius: 13px;
+    color: #4154f1;
+    padding: 2px 13px;
+
+
+}
+ .heading h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #012970;
+
+
+
+}
+.part2 {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    
+}
+
+.part2 .leftpar img{
+    width: 95%;
+
+}
+.rightpar{
+    position: relative;
+    left: 40px;
+}
+.rightpar .col-6 {
+    margin-bottom: 10px;
+    border: 1px solid beige;
+    border-radius: 4px;
+    padding: 22px 13px ;
+    margin-right: 10px;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; Optional: Smooth transition for shadow on hover;
+
+ 
+}
+.rightpar .col-6:hover .spa{
+    color: white;
+    background-color: blue;
+}
+.rightpar .col-6 .spa {
+   color:  blue;
+    background-color: #deecf1;
+    font-size: 20px;
+    padding: 5px;
+  
+
+
+
+}
+.rightpar .col-6 span{
+    color: #012970;
+    position: relative;
+    bottom: 5px;
+    font-size: 20px;
+
+
+}
+/* end of section four */
+
+
+/* start of section five */
+.fivesection{
+  display: flex;
+  margin-top: 100px;
+}
+.fivesection .leftsec .col-6 i{
+
+}
+.fivesection .leftsec{
+
+}
+.fivesection .leftsec .col-6{
+
+}
+.fivesection .leftsec .col-6 i{
+    color: blue;
+    font-size: 35px;
+    position: relative;
+    top: 15px;
+    
+}
+
+.fivesection .leftsec .text{
+    position: relative;
+    left: 40px;
+    bottom: 30px;
+
+
+}
+.fivesection .leftsec .text h5 {
+    color: #012970;
+
+    
+}
+.fivesection .leftsec .text p{
+    
+}
+.fivesection .rightsec img{
+  width: 110%;
+
+}
+
+
+
+/* end of section five */
+
+
+
+/* start of six section */
+.sixsection {
+    margin-top: 50px;
+
+}
+.sixsection .heading{
+    
+}
+.sixsection .heading span{
+    background-color: #bec1da;
+    border: 1px solid #bec1da;
+    border-radius: 13px;
+    color: #4154f1;
+    padding: 2px 13px;
+    
+}
+.sixsection .heading h2{
+    
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #012970;
+}
+.sixsection .secendPart{
+    text-align: center;
+    position: relative;
+    left: 10px;
+}
+.sixsection .secendPart .col-4 {
+    box-shadow: none;
+    margin-bottom: 15px;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; Optional: Smooth transition for shadow on hover;
+    border: 1px solid beige;
+    border-radius: 4px ;
+    width: 30%;
+    margin-right: 26px;
+    height:400px ;
+    position: relative;
+}
+.sixsection .secendPart .col-4.one {
+    border: 3px solid white; /* This will apply a white border around the entire element */
+    border-bottom-color:#0dcaf0 !important; /* This will change only the bottom border color */
+}
+.sixsection .secendPart .col-4.one:hover{
+    background-color: #0dcaf0;
+    border: #0dcaf0;
+    color: white;
+
+}
+.sixsection .secendPart .col-4.one:hover h3 {
+   
+
+    color: white;
+
+}
+.sixsection .secendPart .col-4  .content{
+
+    position: absolute;
+    top: 55px;
+    left: 45px;
+
+
+}
+/* .sixsection .secendPart .col-4  .spa{
+    background-color: #96ecd2;
+    padding: 10px 10px;
+    margin-bottom: 12px;
+  
+    
+
+} */
+.sixsection .secendPart .col-4.one .icon{
+    font-size: 27px;
+    background-color: #d5f5eb;
+    padding: 10px 20px;
+    margin-bottom:5px ;
+    color: #0dcaf0;
+
+
+
+
+}
+.sixsection .secendPart .col-4.one:hover .icon{
+    background-color: white;
+    color: #0dcaf0;
+}
+.sixsection .secendPart .col-4 h3{
+    position: relative;
+    top: 20px;
+    color: #012970;
+}
+.sixsection .secendPart .col-4 p{
+    position: relative;
+    top: 17px;
+    
+}
+.sixsection .secendPart .col-4.one span{
+    font-weight: bold;
+    color: #0dcaf0;
+
+    position: relative;
+    top: 15px;
+}
+.sixsection .secendPart .col-4.one  .bi-arrow-right{
+    position: relative;
+    top: 15px;
+    color: #0dcaf0;
+
+
+}
+.sixsection .secendPart .col-4.one:hover span{
+    color: white;
+}
+.sixsection .secendPart .col-4.one:hover .bi-arrow-right{
+    color: white;
+}
+
+/* two */
+.sixsection .secendPart .col-4.two {
+    border: 3px solid white; /* This will apply a white border around the entire element */
+    border-bottom-color:#fd7e14 !important; /* This will change only the bottom border color */
+}
+.sixsection .secendPart .col-4.two:hover{
+    background-color: #fd7e14;
+    border: #0dcaf0;
+    color: white;
+
+}
+.sixsection .secendPart .col-4.two:hover h3 {
+   
+
+    color: white;
+
+}
+.sixsection .secendPart .col-4.two span{
+    font-weight: bold;
+    color: #fd7e14;
+
+    position: relative;
+    top: 15px;
+}
+.sixsection .secendPart .col-4  .bi-arrow-right{
+    position: relative;
+    top: 15px;
+    color: #fd7e14;
+
+
+}
+
+.sixsection .secendPart .col-4.two .icon{
+    font-size: 27px;
+    background-color: #ecbf98;
+    color: #fd7e14;
+    padding: 10px 20px;
+    margin-bottom:5px ;
+
+
+
+
+
+}
+.sixsection .secendPart .col-4.two:hover .icon{
+    background-color: white;
+    color: #fd7e14;
+}
+.sixsection .secendPart .col-4.two:hover span{
+    color: white;
+}
+.sixsection .secendPart .col-4.two:hover .bi-arrow-right{
+    color: white;
+}
+/* three */
+.sixsection .secendPart .col-4.three span{
+    font-weight: bold;
+    color: #20c997;
+
+    position: relative;
+    top: 15px;
+}
+.sixsection .secendPart .col-4.three  .bi-arrow-right{
+    position: relative;
+    top: 15px;
+    color: #20c997;
+
+
+}
+.sixsection .secendPart .col-4.three {
+    border: 3px solid white; /* This will apply a white border around the entire element */
+    border-bottom-color:#20c997 !important; /* This will change only the bottom border color */
+}
+.sixsection .secendPart .col-4.three:hover{
+    background-color: #20c997;;
+    border: #0dcaf0;
+    color: white;
+
+}
+.sixsection .secendPart .col-4.three:hover h3 {
+   
+
+    color: white;
+
+}
+
+.sixsection .secendPart .col-4.three .icon{
+    font-size: 27px;
+    background-color: #b1fae4;
+    color: #20c997;
+    padding: 10px 20px;
+    margin-bottom:5px ;
+
+
+
+
+
+}
+.sixsection .secendPart .col-4.three:hover .icon{
+    background-color: white;
+    color: #20c997;;
+}
+.sixsection .secendPart .col-4.three:hover span{
+    color: white;
+}
+.sixsection .secendPart .col-4.three:hover .bi-arrow-right{
+    color: white;
+}   
+/* four */
+.sixsection .secendPart .col-4.four span{
+    font-weight: bold;
+    color: #df1529;
+
+    position: relative;
+    top: 15px;
+}
+.sixsection .secendPart .col-4.four  .bi-arrow-right{
+    position: relative;
+    top: 15px;
+    color: #df1529;
+
+
+}
+.sixsection .secendPart .col-4.four {
+    border: 3px solid white; /* This will apply a white border around the entire element */
+    border-bottom-color:#df1529 !important; /* This will change only the bottom border color */
+}
+.sixsection .secendPart .col-4.four:hover{
+    background-color: #df1529;;
+    border: #0dcaf0;
+    color: white;
+
+}
+.sixsection .secendPart .col-4.four:hover h3 {
+   
+
+    color: white;
+
+}
+
+.sixsection .secendPart .col-4.four .icon{
+    font-size: 27px;
+    background-color: #f0adb4;
+    color: #df1529;
+    padding: 10px 20px;
+    margin-bottom:5px ;
+
+
+
+
+
+}
+.sixsection .secendPart .col-4.four:hover .icon{
+    background-color: white;
+    color: #df1529;;
+}
+.sixsection .secendPart .col-4.four:hover span{
+    color: white;
+}
+.sixsection .secendPart .col-4.four:hover .bi-arrow-right{
+    color: white;
+}   
+/* five */
+.sixsection .secendPart .col-4.five span{
+    font-weight: bold;
+    color: #6610f2;;
+
+    position: relative;
+    top: 15px;
+}
+.sixsection .secendPart .col-4.five  .bi-arrow-right{
+    position: relative;
+    top: 15px;
+    color: #6610f2;;
+
+
+}
+.sixsection .secendPart .col-4.five {
+    border: 3px solid white; /* This will apply a white border around the entire element */
+    border-bottom-color:#6610f2 !important; /* This will change only the bottom border color */
+}
+.sixsection .secendPart .col-4.five:hover{
+    background-color: #6610f2;;
+    border: #0dcaf0;
+    color: white;
+
+}
+.sixsection .secendPart .col-4.five:hover h3 {
+   
+
+    color: white;
+
+}
+
+.sixsection .secendPart .col-4.five .icon{
+    font-size: 27px;
+    background-color: #cfb7f5;
+    color: #6610f2;
+    padding: 10px 20px;
+    margin-bottom:5px ;
+
+
+
+
+
+}
+.sixsection .secendPart .col-4.five:hover .icon{
+    background-color: white;
+    color: #6610f2;;
+} 
+.sixsection .secendPart .col-4.five:hover span{
+    color: white;
+}
+.sixsection .secendPart .col-4.five:hover .bi-arrow-right{
+    color: white;
+}
+
+
+
+/* six */
+
+
+.sixsection .secendPart .col-4.six span{
+    font-weight: bold;
+    color: #f3268c;
+
+    position: relative;
+    top: 15px;
+}
+.sixsection .secendPart .col-4.six  .bi-arrow-right{
+    position: relative;
+    top: 15px;
+    color: #f3268c;;
+
+
+
+}
+.sixsection .secendPart .col-4.six:hover span{
+    color: white;
+}
+.sixsection .secendPart .col-4.six:hover .bi-arrow-right{
+    color: white;
+}
+.sixsection .secendPart .col-4.six {
+    border: 3px solid white; /* This will apply a white border around the entire element */
+    border-bottom-color:#f3268c !important; /* This will change only the bottom border color */
+}
+.sixsection .secendPart .col-4.six:hover{
+    background-color: #f3268c;;
+    border: #f3268c;
+    color: white;
+
+}
+.sixsection .secendPart .col-4.six:hover h3 {
+   
+
+    color: white;
+
+}
+
+.sixsection .secendPart .col-4.six .icon{
+    font-size: 27px;
+    background-color: #f37eb8;
+    color: #f3268c;;
+        padding: 10px 20px;
+    margin-bottom:5px ;
+
+
+
+
+
+}
+.sixsection .secendPart .col-4.six:hover .icon{
+    background-color: white;
+    color: #f3268c;;
+}  
+
+
+/* end of six section */
+
+
+
+/* start of seven section */
+
+
+.sevenSection{
+    margin-top: 90px;
+
+
+}
+.sevenSection .row{
+    position: relative;
+    bottom: 20px;
+
+}
+
+.sevenSection .row .col-3 {
+    border: 1px solid beige !important;
+    border-right: 1px solid beige;
+    border-radius: 4px;
+    width: 23%;
+    margin-right: 20px;
+    position: relative;
+    top: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
+    padding: 40px 20px; /* Ensure the .col-3 div has space for the .content */
+    height: 450px; /* Or set a fixed height if needed */
+    transition: transform 0.3s ease; /* Smooth transition for zoom-out effect */
+}
+.sevenSection .row .col-3:hover{
+    transform: scale(1.1); /* Zoom out the div to 90% of its original size on hover */
+}
+
+.sevenSection .row .col-3 .content {
+    position: absolute;
+    top: 40px;
+    left: 40px; /* Position from the left if needed */
+}
+
+.sevenSection .row .col-3 h5{
+    color: #20c997
+  
+
+}
+.sevenSection .row .col-3 .spa1{
+    font-size: 30px;
+    color: #012970;
+ 
+  
+
+}
+.sevenSection .row .col-3 .spa2{
+    color: #dee2e6;
+    margin-top: 25px;
+    
+
+  
+
+}
+
+.sevenSection .row .col-3 i{
+    font-size: 50px;
+    margin-bottom: 25px;
+    position: relative;
+    top: 10px;
+
+}
+.sevenSection .row .col-3 .spa3{
+    display: block;
+    color: #aeb9c4;
+    margin-top: 20px;
+    position: relative;
+    top: 7px;
+    
+    
+}
+.sevenSection .row .col-3 .h1{
+    position: relative;
+    bottom: 28px;
+    width: 50%;
+    margin: auto;
+    color: black;
+
+}
+.sevenSection .row .col-3 .h2{
+    position: relative;
+    bottom: 5px;
+    width: 70%;
+    margin: auto;
+    color: black;
+
+}
+.sevenSection .row .col-3 p{
+    position: relative;
+    top: 30px;
+    
+}
+.sevenSection .row .col-3 .btn{
+    background-color: white;
+    color: blue;
+    padding: 10px 50px;
+    border: 1px solid blue;
+    border-radius: 23px;
+    position: relative;
+    top: 50px;
+    
+}
+
+.sevenSection .row .col-3 .btn:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* start of seven section */
+
+
+
+/* start of section 8 */
+.sectionEight{
+    position: relative;
+    top: 70px;
+}
+.sectionEight .row .toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.sectionEight .elements{
+    margin-top: 15px;
+    display: flex;
+    position: relative;
+    top: 25px;
+    
+}
+.sectionEight .elements .row1  .co{
+    position: relative;
+    right: 20px;
+}
+.sectionEight .elements a{
+    text-decoration: none;
+    color: #012970;
+}
+.sectionEight .elements .row1  a{
+
+    margin-right: 205px;
+ 
+}
+
+
+
+
+
+
+/* end of section 8 */
+
+
+
+/* start of section nine */
+.sectionNine{
+    margin-top: 300px;
+}
+.sectionNine .heading {
+    margin-bottom: 70px;
+
+}
+.sectionNine ul li{
+    margin-right: 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.sectionNine ul li:hover{
+    color: blue !important;
+}
+.sectionNine .row .col-4 {
+    margin-bottom: 20px;
+    box-shadow: none;
+   
+
+   
+}
+.sectionNine .row .col-4 .image{
+    position: relative;
+}
+.sectionNine .row .col-4 .image img{
+    width: 100%;
+
+}
+.sectionNine .row .col-4:hover img{
+    transform: scale(1.02);
+    overflow: hidden;
+
+}
+.sectionNine .row .col-4 .above{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+    
+
+    
+}
+.sectionNine .row .col-4:hover .above {
+    display: block;
+    color: white;
+
+
+    
+}
+.sectionNine .row .col-4 .above span{
+    background-color: blue;
+    padding: 4px 6px;
+    color: white;
+    position: relative;
+    left: 8px;
+
+    
+    
+}
+.sectionNine .row .col-4 .above i{
+    position: relative;
+    top: 100px;
+    left: 60px;
+    font-size: 35px;
+
+    
+    
+}
+.sectionNine .row .col-4 .above p{
+    position: relative;
+    top: 150px;
+    left: 10px;
+
+}
+
+/* end of section nine */
+
+
+/* start of section elevent */
+
+
+.sectionelv{
+    margin-top: 50px;
+}
+.sectionelv .row {
+    position: relative;
+    left: 15px;
+
+}
+
+.sectionelv .row .col-3 {
+    border: 1px solid beige;
+    border-radius: 3px ;
+    width: 22%;
+    margin-right: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */;
+    transition: transform 0.3s ease;
+
+    
+
+
+}
+.sectionelv .row .col-3:hover{
+    transform: scale(1.1);
+}
+.sectionelv .row .col-3 img{
+    width: 110%;
+    position: relative;
+    right: 10px;
+    
+}
+.sectionelv .row .col-3:hover .links{
+    display: block;
+    position: relative;
+    left: 130px;
+
+
+    
+}
+.sectionelv .row .col-3 .links{
+    position: relative;
+    left: 160px;
+    display: none;
+
+    
+
+}
+.sectionelv .row .col-3 .links .bi-facebook{
+    position: relative;
+    bottom: 170px;
+    background-color: #ced4da;
+    padding: 5px;
+    left: 11px;
+
+}
+.sectionelv .row .col-3 .links .bi-instagram{
+    position: relative;
+    bottom: 140px;
+    right: 20px;
+    background-color: #ced4da;
+    padding: 5px;
+
+}
+.sectionelv .row .col-3 .links .bi-linkedin{
+    position: relative;
+    bottom: 110px;
+    right: 50px;
+    background-color: #ced4da;
+    padding: 5px;
+}
+.sectionelv .row .col-3 h5{
+    margin-bottom: 14px;
+    color: #012970;
+    margin-top: 10px;
+
+    
+}
+.sectionelv .row .col-3 span{
+  color:   #ced4da;
+  margin-bottom: 10px;
+    
+}
+.sectionelv .row .col-3 p{
+    position: relative;
+    top: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+/* end of section elevent */
+
+
+/* start of section 12 */
+.tewelve {
+    margin-top: 130px;
+
+}
+.tewelve .row  {
+position: relative;
+left: 30px;
+
+    
+}
+.tewelve .row .col-4{
+    width: 30%;
+    margin-right: 30px;
+    border: 1px solid beige;
+    border-radius: 3px;
+    height: 480px;
+    transition: transform 0.3s ease;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */;
+      overflow: hidden;
+}
+.tewelve .row .col-4 .image img {
+    width: 107%;
+    position: relative;
+    right: 12px;
+    transform: none /* Scale the image to 40% of its original size */
+    
+}
+.tewelve .row .col-4 p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #012970;
+    font-size: 20px;
+    
+}
+.tewelve .row .col-4 .image .date span{
+
+
+}
+.tewelve .row .col-4 .bi-person{
+    color: blue;
+
+    
+}
+.tewelve .row .col-4 .spa1 {
+    color:   #afb8c2;
+
+    
+}
+.tewelve .row .col-4 .bi-folder2 {
+    position: relative;
+    left: 15px;
+    color: blue;
+
+    
+}
+.tewelve .heading h2{
+    margin-bottom: 50px;
+}
+.tewelve .row .col-4 .spa2 {
+    position: relative;
+    left: 25px;
+    color:   #afb8c2;
+    
+}
+.tewelve .row .col-4:hover img{
+  transform: scale(1.1);
+
+}
+.tewelve .row .col-4:hover p{
+    color: blue;
+}
+.tewelve .row .col-4:hover a span {
+    color: blue;
+}
+.tewelve .row .col-4:hover a  .bi-arrow-right {
+    color: blue;
+}
+.tewelve .row .col-4 a {
+    text-decoration: none;
+
+}
+
+.tewelve .row .col-4 a span {
+    font-weight: bold;
+    color: rgb(112, 100, 100);
+    
+}
+
+.tewelve .row .col-4 a  .bi-arrow-right {
+    position: relative;
+    left: 15px;
+    color: rgb(112, 100, 100);
+    
+}
+
+
+
+
+/* end of section 12 */
+
+
+/* end of end  */
+.end{
+    margin-top: 50px;
+
+}
+.end .content  {
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.end .content .row .col-6 {
+    background-color: #ced4da;
+    width: 40%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+
+    
+}
+.end .content .row .col-6  i{
+    
+}
+.end .content .row .col-6 h4{
+    
+}
+.end .content .row .col-6 .spa1 p{
+    
+}
+.end .content .row .col-6 .spa2 p{
+    
+}
+.end .content form{
+    background-color: #ced4da;
+    margin-left: 30px;
+    height: 420px;
+}
+
+
+
+
+
+/* end of end  */
+
+
+/* colors  */
+.colors{
+ position: fixed;
+ top:20%;
+ z-index: 999;
+}
+
+.colors ul {
+    list-style: none;
+    
+}
+.colors ul li {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border: 1px solid #ddd;
+    
+}
+.colors ul li:first-of-type{
+    background-color: black;
+}
+.colors ul li:nth-of-type(2){
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
